@@ -5,6 +5,10 @@
     </head>
     <body>
         <script>
+            let player = ruffle.createPlayer();
+            player.config = {
+                autoplay: "auto",
+            };
             window.RufflePlayer = window.RufflePlayer || {};
             window.addEventListener("load", (event) => {
                 const ruffle = window.RufflePlayer.newest();
